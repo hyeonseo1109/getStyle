@@ -1,4 +1,4 @@
-import { MainPage } from "@pages/ui/index.js";
+import { MainPage } from "@pages/ui";
 import "./global.css.js";
 
 export const App = () => {
