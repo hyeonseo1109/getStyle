@@ -19,9 +19,10 @@ export const getColor = () => {
 
     [style.color, style.backgroundColor, style.borderColor].forEach((color) => {
       if (color && color !== "transparent" && color !== "rgba(0, 0, 0, 0)") {
-        colors.add(rgbToHex(color));
+        colors.add(color.startsWith("#") ? color : rgbToHex(color));
       }
     });
   });
   console.log([...colors]);
+  return [...colors];
 };

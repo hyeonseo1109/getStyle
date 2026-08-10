@@ -33,6 +33,7 @@ export const headerCss = style({
   borderBottom: "1px solid #999",
   display: "flex",
   flexDirection: "row",
+  alignItems: "center",
   padding: "0.2rem",
   justifyContent: "space-between",
 });
