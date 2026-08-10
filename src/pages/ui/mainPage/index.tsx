@@ -1,0 +1,11 @@
+import { TestWidget } from "@widgets/ui";
+import * as styles from "./style.css";
+
+export const MainPage = () => {
+  return (
+    <div className={styles.mainPageContainer}>
+      <p>MainPage</p>
+      <TestWidget />
+    </div>
+  );
+};
