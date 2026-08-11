@@ -19,6 +19,5 @@ export const getFontFamily = () => {
       fonts.add(font);
     });
   });
-  console.log([...fonts]);
   return [...fonts];
 };

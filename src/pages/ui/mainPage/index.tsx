@@ -2,7 +2,7 @@ import { MainWidget } from "@widgets/ui";
 import * as styles from "./style.css";
 import { ClickButton } from "@entities/ui";
 import { getColor, getFontFamily } from "@features/hook";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export const MainPage = () => {
   const [colorArr, setColorArr] = useState<string[]>([]);
@@ -12,11 +12,6 @@ export const MainPage = () => {
     setColorArr(getColor());
     setFontArr(getFontFamily());
   };
-
-  useEffect(() => {
-    console.log("colorArr", colorArr);
-    console.log("fontArr", fontArr);
-  }, [colorArr, fontArr]);
 
   return (
     <div className={styles.mainPageContainer}>

@@ -2,7 +2,6 @@ import { style } from "@vanilla-extract/css";
 
 export const buttonCss = style({
   backgroundColor: "#699d69",
-  // backgroundColor: "#699d69",
   color: "white",
   width: "40px",
   height: "25px",

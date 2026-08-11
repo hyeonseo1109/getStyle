@@ -3,7 +3,6 @@ import { style } from "@vanilla-extract/css";
 export const mainPageContainer = style({
   width: "100%",
   height: "100%",
-  border: "1px solid red",
   padding: "0.5rem",
   display: "flex",
   flexDirection: "column",
@@ -15,18 +14,11 @@ export const arrContainer = style({
   height: "100%",
   display: "flex",
   flexDirection: "row",
-  border: "1px solid blue",
   overflow: "hidden",
   flex: 1,
   minHeight: 0,
   gap: "0.5rem",
 });
-
-// export const titleCss = style({
-//   fontSize: "1.4rem",
-//   fontWeight: "700",
-//   color: "#465446",
-// });
 
 export const textCss = style({
   fontSize: "0.8rem",

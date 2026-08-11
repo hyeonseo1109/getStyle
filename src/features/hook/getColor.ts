@@ -23,6 +23,5 @@ export const getColor = () => {
       }
     });
   });
-  console.log([...colors]);
   return [...colors];
 };
