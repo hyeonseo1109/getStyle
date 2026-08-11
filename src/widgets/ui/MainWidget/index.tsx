@@ -14,9 +14,9 @@ export const MainWidget = ({
 }) => {
   return (
     <div className={styles.mainWidgetContainer}>
-      <p>{title}</p>
+      <p className={styles.titleCss}>[ {title} ]</p>
       {arr.map((element) => (
-        <div>
+        <div className={styles.contentLisContainer}>
           {type === "color" && <ColorBox hex={element} />}
           {element}
         </div>

@@ -37,3 +37,11 @@ export const headerCss = style({
   padding: "0.2rem",
   justifyContent: "space-between",
 });
+
+export const colorListContainer = style({
+  width: "40%",
+});
+
+export const fontListContainer = style({
+  width: "60%",
+});
