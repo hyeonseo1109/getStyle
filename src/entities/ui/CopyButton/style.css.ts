@@ -1,8 +1,8 @@
 import { style } from "@vanilla-extract/css";
 
 export const copyButtonCss = style({
-  backgroundColor: "#9cbc9c",
-  color: "#3e5e3e",
+  backgroundColor: "#d6e2d6",
+  color: "#949494",
   width: "30px",
   height: "20px",
   fontSize: "0.65rem",

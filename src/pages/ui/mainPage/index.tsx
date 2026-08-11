@@ -26,16 +26,20 @@ export const MainPage = () => {
         </p>
         <ClickButton text="조회" onClick={handleClick} />
       </div>
-      <div className={styles.arrContainer}>
-        <div className={styles.colorListContainer}>
-          <p className={styles.titleCss}>[ 색상 ]</p>
-          <MainWidget arr={colorArr} type="color" />
+      {colorArr.length === 0 || fontArr.length === 0 ? (
+        <div className={styles.preFetchDescription}>조회버튼을 눌러주세요.</div>
+      ) : (
+        <div className={styles.arrContainer}>
+          <div className={styles.colorListContainer}>
+            <p className={styles.titleCss}>[ 색상 ]</p>
+            <MainWidget arr={colorArr} type="color" />
+          </div>
+          <div className={styles.fontListContainer}>
+            <p className={styles.titleCss}>[ 폰트 ]</p>
+            <MainWidget arr={fontArr} />
+          </div>
         </div>
-        <div className={styles.fontListContainer}>
-          <p className={styles.titleCss}>[ 폰트 ]</p>
-          <MainWidget arr={fontArr} />
-        </div>
-      </div>
+      )}
     </div>
   );
 };

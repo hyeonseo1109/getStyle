@@ -19,6 +19,7 @@ export const arrContainer = style({
   overflow: "hidden",
   flex: 1,
   minHeight: 0,
+  gap: "0.5rem",
 });
 
 // export const titleCss = style({
@@ -55,10 +56,22 @@ export const fontListContainer = style({
   height: "100%",
   flexDirection: "column",
   display: "flex",
+  borderLeft: "1px solid #aaa",
 });
 
 export const titleCss = style({
   fontSize: "1rem",
   color: "#777",
   padding: "0.1rem 0.2rem",
+});
+
+export const preFetchDescription = style({
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  width: "100%",
+  height: "100%",
+  fontSize: "0.9rem",
+  marginBottom: "1rem",
+  color: "#666",
 });
