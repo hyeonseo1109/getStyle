@@ -1,7 +1,13 @@
-import { rgbToHex } from "@features/util";
-
 export const getColor = () => {
   const colors = new Set<string>();
+
+  const rgbToHex = (rgb: string) => {
+    const [r, g, b] = rgb.match(/\d+/g)!.map(Number);
+
+    return (
+      "#" + [r, g, b].map((value) => value.toString(16).padStart(2, "0")).join("")
+    );
+  };
 
   document.querySelectorAll("*").forEach((e) => {
     const style = getComputedStyle(e);

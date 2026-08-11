@@ -8,9 +8,23 @@ export const MainPage = () => {
   const [colorArr, setColorArr] = useState<string[]>([]);
   const [fontArr, setFontArr] = useState<string[]>([]);
 
-  const handleClick = () => {
-    setColorArr(getColor());
-    setFontArr(getFontFamily());
+  const handleClick = async () => {
+    const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+
+    if (!tab.id) return;
+
+    const [{ result: colors }] = await chrome.scripting.executeScript({
+      target: { tabId: tab.id },
+      func: getColor,
+    });
+
+    const [{ result: fonts }] = await chrome.scripting.executeScript({
+      target: { tabId: tab.id },
+      func: getFontFamily,
+    });
+
+    setColorArr(colors);
+    setFontArr(fonts);
   };
 
   return (
