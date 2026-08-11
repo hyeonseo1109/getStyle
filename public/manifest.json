@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "색상/폰트 추출기",
+  "version": "1.0.0",
+  "description": "현재 사이트에 사용된 색상과 폰트를 조회하고 복사합니다.",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "색상/폰트 추출기"
+  },
+  "permissions": ["activeTab", "scripting", "clipboardWrite"]
+}
