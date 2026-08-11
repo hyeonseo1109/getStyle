@@ -27,7 +27,7 @@ export const MainPage = () => {
         <ClickButton text="조회" onClick={handleClick} />
       </div>
       <div className={styles.arrContainer}>
-        <MainWidget arr={colorArr} title="색상" />
+        <MainWidget arr={colorArr} title="색상" type="color" />
         <MainWidget arr={fontArr} title="폰트" />
       </div>
     </div>
