@@ -28,10 +28,12 @@ export const MainPage = () => {
       </div>
       <div className={styles.arrContainer}>
         <div className={styles.colorListContainer}>
-          <MainWidget arr={colorArr} title="색상" type="color" />
+          <p className={styles.titleCss}>[ 색상 ]</p>
+          <MainWidget arr={colorArr} type="color" />
         </div>
         <div className={styles.fontListContainer}>
-          <MainWidget arr={fontArr} title="폰트" />
+          <p className={styles.titleCss}>[ 폰트 ]</p>
+          <MainWidget arr={fontArr} />
         </div>
       </div>
     </div>

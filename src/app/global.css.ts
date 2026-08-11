@@ -26,6 +26,8 @@ globalStyle("body", {
   // 배경 이미지 설정 시
   // backgroundImage: "url('/background.jpeg')",
   // backgroundSize: "cover",
+  width: "500px",
+  height: "300px",
 });
 
 globalStyle("#root", {
@@ -33,7 +35,6 @@ globalStyle("#root", {
   flexDirection: "column",
   width: "100%",
   height: "100%",
-  overflow: "hidden",
 });
 
 /* =========================

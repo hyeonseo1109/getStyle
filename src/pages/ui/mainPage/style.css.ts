@@ -1,9 +1,9 @@
 import { style } from "@vanilla-extract/css";
 
 export const mainPageContainer = style({
-  width: "500px",
-  height: "300px",
-  border: "1px solid black",
+  width: "100%",
+  height: "100%",
+  border: "1px solid red",
   padding: "0.5rem",
   display: "flex",
   flexDirection: "column",
@@ -11,16 +11,21 @@ export const mainPageContainer = style({
 });
 
 export const arrContainer = style({
+  width: "100%",
+  height: "100%",
   display: "flex",
   flexDirection: "row",
-  border: "1px solid black",
+  border: "1px solid blue",
+  overflow: "hidden",
+  flex: 1,
+  minHeight: 0,
 });
 
-export const titleCss = style({
-  fontSize: "1.4rem",
-  fontWeight: "700",
-  color: "#465446",
-});
+// export const titleCss = style({
+//   fontSize: "1.4rem",
+//   fontWeight: "700",
+//   color: "#465446",
+// });
 
 export const textCss = style({
   fontSize: "0.8rem",
@@ -40,8 +45,20 @@ export const headerCss = style({
 
 export const colorListContainer = style({
   width: "40%",
+  height: "100%",
+  display: "flex",
+  flexDirection: "column",
+  // overflowY: "scroll",
 });
 
 export const fontListContainer = style({
   width: "60%",
+  height: "100%",
+  flexDirection: "column",
+  display: "flex",
+});
+
+export const titleCss = style({
+  fontSize: "1rem",
+  color: "#777",
 });
