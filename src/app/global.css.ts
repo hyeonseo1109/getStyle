@@ -81,12 +81,12 @@ globalStyle("img", {
 ========================= */
 
 globalStyle("::-webkit-scrollbar", {
-  width: "8px",
+  width: "6px",
   height: "8px",
 });
 
 globalStyle("::-webkit-scrollbar-thumb", {
-  background: "#2a2a2a",
+  background: "#d2d2d2",
   borderRadius: "8px",
 });
 

@@ -48,7 +48,6 @@ export const colorListContainer = style({
   height: "100%",
   display: "flex",
   flexDirection: "column",
-  // overflowY: "scroll",
 });
 
 export const fontListContainer = style({
@@ -61,4 +60,5 @@ export const fontListContainer = style({
 export const titleCss = style({
   fontSize: "1rem",
   color: "#777",
+  padding: "0.1rem 0.2rem",
 });
